@@ -1,0 +1,10 @@
+## Interface: 11200
+## Title: X-Perl |cFF40FF40ManaTick|r
+## Notes: Fuenf-Sekunden-Regel und Zwei-Sekunden-Tick als schmaler Streifen auf dem XPerl-Manabalken.|nAufruf: /xpm oder Knopf neben den XPerl-Optionen.
+## Author: Ergaenzung zu X-Perl (Redbu11)
+## Version: 1.0
+## RequiredDeps: XPerl
+## SavedVariables: XPerlManaTickConfig
+
+XPerl_ManaTick.lua
+XPerl_ManaTick_Options.lua
