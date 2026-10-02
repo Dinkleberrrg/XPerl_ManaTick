@@ -1,22 +1,22 @@
 # X-Perl ManaTick
 
-Zusatzmodul für X-Perl UnitFrames (WoW 1.12): zeigt die Fünf-Sekunden-Regel und den Mana-Tick als schmalen Streifen am XPerl-Manabalken.
+Add-on module for X-Perl UnitFrames (WoW 1.12): shows the five-second rule and the mana tick as a thin strip on the X-Perl mana bar.
 
-## Was es zeigt
-- **Fünf-Sekunden-Regel:** Nach jedem Manaverbrauch pausiert die geistbasierte Regeneration fünf Sekunden. Der Streifen füllt sich in dieser Zeit, ein Funke läuft an der Vorderkante mit.
-- **Zwei-Sekunden-Tick:** Danach kommt Mana im Zwei-Sekunden-Takt zurück, der Streifen zeigt den nächsten Tick.
+## What it shows
+- **Five-second rule:** after spending mana, spirit-based regeneration pauses for five seconds. The strip fills up during that time with a spark riding the leading edge.
+- **Two-second tick:** afterwards mana comes back every two seconds; the strip shows the next tick.
 
-Beide Phasen lassen sich einzeln abschalten. Die Standardoptik entspricht dem Energy-Ticker aus XPerl 3.x (WotLK).
+Both phases can be turned off individually. The default look matches the energy ticker of X-Perl 3.x (WotLK).
 
-## Bedienung
-- `/xpm` oder `/xperlmana` öffnet die Einstellungen.
-- Alternativ über den Knopf neben den XPerl-Optionen.
+## Usage
+- `/xpm` or `/xperlmana` opens the settings.
+- Alternatively use the button next to the X-Perl options.
 
-## Wie es funktioniert
-Vanilla hat weder ein Ereignis für den Regenerationstick noch eine API für die verbleibende Sperrzeit. Beides wird aus `UNIT_MANA` abgeleitet: Mana sinkt, also startet die Sperre neu; Mana steigt, also war gerade ein Tick.
+## How it works
+Vanilla has neither an event for the regeneration tick nor an API for the remaining lockout. Both are derived from `UNIT_MANA`: mana goes down, so the lockout restarts; mana goes up, so a tick just happened.
 
-## Voraussetzungen
+## Requirements
 XPerl
 
-## Gespeicherte Daten
+## Saved data
 `XPerlManaTickConfig`
